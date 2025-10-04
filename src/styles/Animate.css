@@ -1,0 +1,50 @@
+
+ /* PRELOADER */
+    #preloader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 9999;
+      color: #e6eef8;
+      font-family: "SUSE Mono", monospace;
+    }
+
+    #preloader h1 {
+      --chars: 14; /* número de caracteres em "Matias Armando" */
+      --duration: 2.5s;
+
+      font-size: 2.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #3b82f6;
+      width: 0ch;
+      animation: typing var(--duration) steps(var(--chars)) forwards,
+                 blink .8s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0ch; }
+      to { width: var(--chars)ch; }
+    }
+
+    @keyframes blink {
+      0%, 49% { border-color: #3b82f6; }
+      50%, 100% { border-color: transparent; }
+    }
+
+    /* animação para esconder o preloader */
+    .hidden {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+
+    /* esconde conteúdo até carregar */
+    #conteudo {
+      display: none;
+    }

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Port-000</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/src/styles/GlobalStyles.css" />
+    <link rel="stylesheet" href="/src/styles/Animate.css" />
+    <link rel="stylesheet" href="/src/styles/MobileStyles.css" media="screen" />
+  </head>
+  <body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <h1>Matias Armando</h1>
+      <p>Carregando...</p>
+    </div>
+
+    <!-- CONTEÚDO DO SITE -->
+    <div id="conteudo">
+      <!-- menu side -->
+      <header class="header" id="header">
+        <section class="interface">
+          <div class="conteiner-logo">
+            <h1 class="logo">ma.</h1>
+          </div>
+          <nav class="nav-conteiner">
+            <ul>
+              <li class="item-menu ativo"><a href="#">Home</a></li>
+              <li class="item-menu"><a href="#aboutme">About</a></li>
+              <li class="item-menu"><a href="#projects">Projects</a></li>
+              <li class="item-menu"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- btn-mobile -->
+          <div class="btn-mobile" id="btn-mobile">
+            <div class="line-menumob-1"></div>
+
+            <div class="line-menumob-2"></div>
+          </div>
+          <!-- menu mobile -->
+          <section class="menu-mobile" id="menu-mobile">
+            <nav class="menu-navb">
+              <ul>
+                <li class="item-menu ativo"><a href="#">Home</a></li>
+                <li class="item-menu"><a href="#aboutme">About</a></li>
+                <li class="item-menu"><a href="#projects">Projects</a></li>
+                <li class="item-menu"><a href="#contact">Contacts</a></li>
+              </ul>
+            </nav>
+          </section>
+        </section>
+      </header>
+
+      <!-- hero site -->
+      <section class="hero-site">
+        <div class="conteiner-mat"></div>
+        <div class="conteiner-mat-des">
+          <h1>My <br />PortFolio</h1>
+          <p>
+            Sou desenvolvedor Front-end apaixonado pela parte visual dos
+            projetos. Trabalho com React, Tailwind e Shadcn UI, sempre buscando
+            evoluir e oferecer a melhor experiência possível.
+          </p>
+          <div class="btn-curriculum-conteiner">
+            <a href="/src/pdf/Matias_Developer.pdf">
+              <button class="btn-curriculum">Curriculum</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutme" class="conteiner-about">
+        <div class="conteiner-about-me">
+          <div class="content-about-me">
+            <h1 class="title-about">About-me</h1>
+            <div>
+              <p>
+                Sou Matias Armando, técnico médio em Informática de Gestão e
+                desenvolvedor Front-end, com experiência em HTML, CSS,
+                JavaScript, React, Tailwind CSS e Shadcn/UI. Para mim,
+                desenvolver é uma forma de arte, na qual transformo ideias em
+                soluções através do código. Quanto mais estudo programação, mais
+                minha mente se torna flexível para absorver novos conteúdos e
+                evoluir como profissional.
+              </p>
+            </div>
+
+          <!-- <div class="skills-section">
+  <h1>Habilidades</h1>
+
+  <div class="skills-grid">
+    <ul>
+      <li><span></span> HTML</li>
+      <li><span></span> CSS</li>
+      <li><span></span> Tailwind CSS</li>
+      <li><span></span> JavaScript</li>
+      <li><span></span> Bootstrap</li>
+    </ul>
+
+    <ul>
+      <li><span></span> React</li>
+      <li><span></span> Shadcn/UI</li>
+      <li><span></span> Node.js</li>
+      <li><span></span> SQL</li>
+      <li><span></span> Git</li>
+      <li><span></span> Sequelize</li>
+    </ul>
+  </div>
+</div> -->
+
+          </div>
+          <div class="conteiner-about-me-img">
+            <div class="card-img">
+              <img src="/src/image/BRUNO.png" alt="" class="amg-about" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="conteiner-projects" id="projects">
+        <h1 class="title-projects">Projects</h1>
+        <div class="content-projects">
+          <div class="des-projects">
+            <div class="project-card">
+              <h1 class="title-project">smarts.vendas</h1>
+              <p>
+                Um sistema de gerenciamento de documentos eletrônicos (GED)
+                criado para todos os tipos de empresas.
+              </p>
+              <a href="#" class="btn-project">Visitar</a>
+            </div>
+            <div class="project-card">
+              <h1 class="title-project">Kreavita</h1>
+              <p>
+                Um site empresarial com projetos da Kreavita, empresa
+                especializada em design de interiores e renderização 3D.
+              </p>
+              <a href="#" class="btn-project">Visite</a>
+            </div>
+          </div>
+          <div class="conteiner-img-projects">
+            <div class="img-project-one"></div>
+            <div class="img-project-two"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer site -->
+      <footer class="conteiner-footer" id="contact">
+        <div class="content-footer">
+          <div class="conteiner-rede-social">
+            <h1 class="title-contacts">Contacts</h1>
+            <div class="redes-social">
+              <p class="telefone">+(244) 930001585 / 955249905</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/matias-armando"
+                    target="_blank"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/Matias-Armando" target="_blank">
+                    <i class="bi bi-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:matiasarmando925@gmail.com">
+                    <i class="bi bi-inbox"></i>
+                    <span>E-mail</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="img-contacts"><p></p></div>
+        </div>
+      </footer>
+    </div>
+    <!-- fim conteudo -->
+
+    <!-- SCRIPT -->
+    <script src="/src/script/javaScrip.js"></script>
+    <script src="/src/script/AnimatejJs.js"></script>
+  </body>
+</html>
