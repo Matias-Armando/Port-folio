@@ -12,38 +12,29 @@ header .btn-mobile{
   .hero-site{
     flex-direction: column;
     padding: 0.5rem;
+     margin-top: 4rem;
 
 }
 
-    
+.conteiner-about {
+  
+  height: 145vh;
 }
-.hero-site {
-  display: flex;
-  gap: 8px;
-  width: 100%;
-  height: 100vh;
-  margin-top: 5rem;
-}
+ 
 
-.conteiner-mat-des {
-  width: 100%;
-  border-radius: 12px;  
-  display: flex;
-  padding: 2rem;
+.project-card {
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
+}
+.conteiner-projects{
+  height: 150vh;
+
 }
 
 
 
 /* Responsividade */
 @media (max-width: 768px) {
-  .hero-site {
-    flex-direction: column; /* empilha a imagem e o texto */
-    height: auto;
-  }
+ 
   
 .conteiner-about-me{
     flex-direction: column;
@@ -53,12 +44,12 @@ header .btn-mobile{
     height: 40vh; /* imagem ocupa só parte da tela no mobile */
     border-radius: 8px;
   }
-  .title-about, .title-contacts, .title-projects{
-    font-size: 1.5rem;
+  .title{
+    font-size: 1rem;
   }
 
   .conteiner-mat-des h1 {
-    font-size: 3rem; /* menor no tablet/celular */
+    font-size: 2rem; /* menor no tablet/celular */
     text-align: center;
   }
   
