@@ -3,12 +3,11 @@
         display: none;
     }
       
-header .menu-mobile.abrir{
-    display: flex;
+.openMobile{
+  display: block;
+
 }
-header .btn-mobile{
-    display: block;
-  }
+    
   .hero-site{
     flex-direction: column;
     padding: 0.5rem;
