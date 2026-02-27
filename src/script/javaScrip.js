@@ -1,17 +1,7 @@
-// let btnMenuMob= document.querySelector('#btn-mobile')
-//   let line1 = document.querySelector('.line-menumob-1')
-//   let line2 = document.querySelector('.line-menumob-2')
-// let menuMobile= document.querySelector('#menu-mobile')
- 
-//   btnMenuMob.addEventListener('click', () =>{
-// line1.classList.toggle('ativo1')
-// line2.classList.toggle('ativo2')
-// menuMobile.classList.toggle('abrir')
 
-//   })
-const btnCloseMobile = document.getElementById('closeMenuBtn');
-const btnOpenMobile = document.getElementById('menuBtn');
-const MenuMobile = document.getElementById('menu-mobile');
+const btnCloseMobile = document.getElementById('CloseMobile');
+const btnOpenMobile = document.getElementById('OpenMobile');
+const MenuMobile = document.getElementById('navbar-mobile');
 
 // 👉 Abrir menu
 btnOpenMobile.addEventListener('click', () => {
@@ -40,9 +30,9 @@ var MenuItem = document.querySelectorAll('.item-menu')
 function SelectLink(){
 
   MenuItem.forEach((item) => {
-    item.classList.remove("ativo")
+    item.classList.remove("active")
   });
-  this.classList.add("ativo")
+  this.classList.add("active")
 }
 MenuItem.forEach((item) =>
 item.addEventListener('click', SelectLink))

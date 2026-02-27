@@ -1,50 +1,76 @@
-
- /* PRELOADER */
-    #preloader {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: #0f172a;
+.preloader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      background: linear-gradient(#7d2ae8, whitesmoke, rgb(238, 231, 231)) ;
       z-index: 9999;
-      color: #e6eef8;
-      font-family: "SUSE Mono", monospace;
+      flex-direction: column;
+      transition: opacity 1s ease, visibility 1s ease;
     }
 
-    #preloader h1 {
-      --chars: 14; /* número de caracteres em "Matias Armando" */
-      --duration: 2.5s;
-
-      font-size: 2.5rem;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid #3b82f6;
-      width: 0ch;
-      animation: typing var(--duration) steps(var(--chars)) forwards,
-                 blink .8s step-end infinite;
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90%;
     }
 
-    @keyframes typing {
-      from { width: 0ch; }
-      to { width: var(--chars)ch; }
+    .circle {
+      position: absolute;
+      width: calc(var(--i) * 2.5vmin);
+      aspect-ratio: 1;
+      border: 3px solid rgb(30, 155, 180);
+      border-radius: 20%;
+      background-color: transparent;
+      transform-style: preserve-3d;
+      transform: rotateX(70deg) translateZ(50px);
+      animation: animate 3s ease-in-out infinite;
+      animation-delay: calc(var(--i) * 0.08s);
+      box-shadow: 0 0 10px rgb(9, 129, 156);
     }
 
-    @keyframes blink {
-      0%, 49% { border-color: #3b82f6; }
-      50%, 100% { border-color: transparent; }
+    @keyframes animate {
+      0%, 100% {
+        transform: rotateX(70deg) translateZ(50px) translateY(0);
+        filter: hue-rotate(0);
+      }
+      50% {
+        transform: rotateX(70deg) translateZ(50px) translateY(-50vmin);
+        filter: hue-rotate(180deg);
+      }
     }
 
-    /* animação para esconder o preloader */
-    .hidden {
+    .name {
+      opacity: 0;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      color:#7d2ae8;
+      text-shadow: 0 0 2px rgb(21, 157, 202);
+      margin-top: 1rem;
+      animation: showName 2s ease forwards;
+      animation-delay: 3s; /* aparece após 3s */
+    }
+
+    @keyframes showName {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Oculta o preloader depois */
+    .preloader.hide {
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.8s ease, visibility 0.8s ease;
-    }
-
-    /* esconde conteúdo até carregar */
-    #conteudo {
-      display: none;
+      pointer-events: none;
     }

@@ -1,10 +1,6 @@
- window.addEventListener("load", () => {
+setTimeout(() => {
       const preloader = document.getElementById("preloader");
-      const conteudo = document.getElementById("conteudo");
-
-      preloader.classList.add("hidden");
-      setTimeout(() => {
-        preloader.style.display = "none";
-        conteudo.style.display = "block";
-      }, 1000); // tempo do fade
-    });
+      const content = document.getElementById("content");
+      preloader.classList.add("hide");
+      content.style.display = "block";
+    }, 4500);

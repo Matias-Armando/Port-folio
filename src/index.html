@@ -4,101 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Port-000</title>
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- bootstrap icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <!-- css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"></script>
+    
+    <!-- ================================ bootstrap icons  ======================================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <!-- ================================ bootstrap icons  ======================================-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- ============================== css =============================== -->
     <link rel="stylesheet" href="/src/styles/GlobalStyles.css" />
     <link rel="stylesheet" href="/src/styles/Animate.css" />
     <link rel="stylesheet" href="/src/styles/MobileStyles.css" media="screen" />
+      <!-- ============================== css =============================== -->
   </head>
   <body>
-    <!-- PRELOADER -->
-    <div id="preloader">
-      <h1>Matias Armando</h1>
-      <p>Carregando...</p>
+
+<!--     
+     <div class="preloader" id="preloader">
+    <div class="container">
+  
+      <div class="circle" style="--i:1;"></div>
+      <div class="circle" style="--i:2;"></div>
+      <div class="circle" style="--i:3;"></div>
+      <div class="circle" style="--i:4;"></div>
+      <div class="circle" style="--i:5;"></div>
+      <div class="circle" style="--i:6;"></div>
+      <div class="circle" style="--i:7;"></div>
+      <div class="circle" style="--i:8;"></div>
+      <div class="circle" style="--i:9;"></div>
+      <div class="circle" style="--i:10;"></div>
+      <div class="circle" style="--i:11;"></div>
+      <div class="circle" style="--i:12;"></div>
+      <div class="circle" style="--i:13;"></div>
+      <div class="circle" style="--i:14;"></div>
+      <div class="circle" style="--i:15;"></div>
+      <div class="circle" style="--i:16;"></div>
+      <div class="circle" style="--i:17;"></div>
+      <div class="circle" style="--i:18;"></div>
+      <div class="circle" style="--i:19;"></div>
+      <div class="circle" style="--i:20;"></div>
     </div>
+    <h1 class="name">Matias Armando</h1>
+  </div> -->
 
-    <!-- CONTEÚDO DO SITE -->
-    <div id="conteudo">
-      <!-- menu side -->
-      <header class="header" id="header">
-          <div class="conteiner-logo">
-            <h1 class="logo">ma.</h1>
-          </div>
-          <nav class="nav-conteiner">
-            <ul>
-              <li class="item-menu ativo"><a href="#">Home</a></li>
-              <li class="item-menu"><a href="#aboutme">About</a></li>
-              <li class="item-menu"><a href="#projects">Projects</a></li>
-              <li class="item-menu"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-          <!-- open mobile -->
-           <button id="menuBtn" class="openMobile"> <i class="bi bi-list"></i></button>
+  
+<!-- ======================= header =========================== -->
+<header class="header">
 
-            <!-- open mobile -->
-      
+<a href="#" class="logo">ma.</a>
 
-          <!-- menu mobile -->
-          <section class="menu-mobile" id="menu-mobile">
+<nav class="navbar active-item" >
+  <a href="#" class="active item-menu">Home</a>
+  <a href="#about" class="item-menu">Sobre</a>
+  <a href="#projects" class="item-menu">Projectos</a>
+  <a href="#contact" class="item-menu">contacto</a>
+</nav>
+<!-- =============== openMobile =============== -->
+<div class="OpenMobile" id="OpenMobile" ><i class="bi bi-list"></i></div>
+<!-- =============== openMobile =============== -->
+<nav class="navbar-mobile active-item" id="navbar-mobile">
+  <!-- ============ close Mobile -->
+  <div class="CloseMobile" id="CloseMobile" ><i class="bi bi-x"></i>  </div>
+   <!-- ============ close Mobile -->
 
-              <!-- close mobile -->
-            <button id="closeMenuBtn"> <i class="bi bi-x"></i></button>
-               <!-- close mobile -->
+  
+  <a  href="#" class="active item-menu">Home</a>
+  <a href="#about" class="item-menu">Sobre</a>
+  <a href="#projects" class="item-menu">Projectos</a>
+  <a href="#contact" class="item-menu">contacto</a>
 
-            <nav class="menu-navb">
-              <ul>
-                <li class="item-menu ativo"><a href="#">Home</a></li>
-                <li class="item-menu"><a href="#aboutme">About</a></li>
-                <li class="item-menu"><a href="#projects">Projects</a></li>
-                <li class="item-menu"><a href="#contact">Contacts</a></li>
-              </ul>
-            </nav>
-          </section>
-          <!-- menu mobile -->
-      
-      </header>
+</nav>
+</header>
+<!-- ======================= header =========================== -->
 
-      <!-- hero site -->
-
-      <main>
-
-    
-      <section class="hero-site">
-        <div class="conteiner-mat"></div>
-        <div class="conteiner-mat-des">
-          <h1>My <br />PortFolio</h1>
-          <p>
-            Sou desenvolvedor Front-end apaixonado pela parte visual dos
+<!-- ======================== home ================================ -->
+<section class="home">
+  <div class="home-content">
+    <h1>Olá, eu sou Matias Armando</h1>
+    <h3>Desenvolvedor Frontend</h3>
+    <p>
+            Apaixonado pela parte visual dos
             projetos. Trabalho com React, Tailwind e Shadcn UI, sempre buscando
             evoluir e oferecer a melhor experiência possível.
           </p>
-          <div class="btn-curriculum-conteiner">
-            <a href="/src/pdf/Matias_Developer.pdf">
-              <button class="btn-curriculum">Curriculum</button>
-            </a>
+
+          <div class="btn-box">
+          <a href="../src/pdf/Matias_Developer.pdf">Baixar cv</a>
+          <a href="#">Contacto</a>
+        </div>
+  </div>
+  <div class="home-sci">
+        <a href="#">fb</a>
+        <a href="#">wh</a>
+        <a href="#">Ld</a>
+      </div>
+
+      <div class="home-img">
+
+        <div class="img-box">
+          <div class="img-item">
+            <img src="../src/image/BRUNO.png" alt="">
           </div>
         </div>
-      </section>
+      </div>
+</section>
+<!-- ======================== home ================================ -->
 
-      <section id="aboutme" class="conteiner-about">
-       
-     <div class="interface">
-         <div class="conteiner-about-me">
-          <div class="content-about-me">
-            <h1 class="title-about title">About-me</h1>
-            <div>
-              <p>
+<section class="about" id="about">
+  <h3 class="title">
+    Sobre-me
+  </h3>
+  <div class="about-content">
+
+      <div class="about-img">
+                <img src="../src/image/bru.png" alt="">
+              </div>
+
+             <p>
                 Sou Matias Armando, técnico médio em Informática de Gestão e
                 desenvolvedor Front-end, com experiência em HTML, CSS,
                 JavaScript, React, Tailwind CSS e Shadcn/UI. Para mim,
@@ -107,125 +130,114 @@
                 minha mente se torna flexível para absorver novos conteúdos e
                 evoluir como profissional.
               </p>
-            </div>
 
-        <div class="skills-section">
-  <h1>Habilidades</h1>
+            
 
-  <div class="skills-grid">
-    <ul>
-      <li><span></span> HTML</li>
-      <li><span></span> CSS</li>
-      <li><span></span> Tailwind CSS</li>
-      <li><span></span> JavaScript</li>
-        <li><span></span> React</li>
-      <li><span></span> Bootstrap</li>
-    </ul>
 
-    <ul>
-    
-      <li><span></span> Shadcn/UI</li>
-      <li><span></span> Node.js</li>
-      <li><span></span> SQL</li>
-      <li><span></span> Git</li>
-      <li><span></span> Sequelize</li>
-    </ul>
   </div>
-</div> 
+  <div>
+</section>
+<!-- ====================== about-me =========================== -->
 
-          </div>
-          <div class="conteiner-about-me-img">
-            <div class="card-img">
-              <img src="/src/image/BRUNO.png" alt="" class="amg-about" />
-            </div>
-          </div>
-        </div>
-     </div>
-      </section>
 
-      <section class="conteiner-projects" id="projects"> <!-- projects- -->
-     <div class="interface">
-         <h1 class="title-projects title">Projects</h1>
-        <div class="flex-projects">
 
-  <div class="project-card">
-      <div class="project-info">
-      <h1 class="title-project">smarts.vendas</h1>
-      <p>
-        Um sistema de gerenciamento de documentos eletrônicos (GED)
-        criado para todos os tipos de empresas.
-      </p>
-      <a href="#" class="btn-project">Visitar</a>
+<section class="skill">
+
+<h3 class="title">Habilidades</h3>
+
+  
+  <div class="skill-content">
+
+    <div class="card"><img src="../src/image/html5-brands-solid-full.svg" alt=""> <small>HTML</small> </div>
+
+    <div class="card">
+      <img src="../src/image/css3-brands-solid-full.svg" alt="">
+        <small>CSS</small>
+    
     </div>
-    <div class="project-image">
-      <img src="/src/image/Captura de ecrã 2025-10-02 132256.png" alt="Smarts Vendas">
+
+    <div class="card"> 
+      <img src="../src/image/Tailwind_CSS_Logo.svg" alt=""> 
+        <small>TAILWIND CSS</small>
+    
+    </div>
+
+    <div class="card"><img src="../src/image/js-brands-solid-full.svg" alt=""></i><small>JAVASCRIPT</small>  </div>
+
+    <div class="card"> <img src="../src/image/bootstrap-brands-solid-full.svg" alt=""> <small>BOOTSTRAP</small>  </div>
+
+    <div class="card"> <img src="../src/image/database-solid-full.svg" alt=""> <small>SQL</small></div>
+
+    <div class="card"> <img src="../src/image/node-js-brands-solid-full.svg" alt=""><small>NODE.JS</small>  </div>
+
+    <div class="card"> <img src="../src/image/react-brands-solid-full.svg" alt=""> <small>REACT</small></div>
+
+   <div class="card"> <img src="../src/image/git-alt-brands-solid-full.svg" alt="">  <small>GIT</small> </div>
+   <div class="card"> <img src="../src/image/github-brands-solid-full.svg" alt="">  <small>GITHUB</small> </div>
+
+  </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+<h3 class="title"> Projectos</h3>
+
+  <div class="content-projects">
+    <div class="flex-projects">
+
+      <div class="card-projects" style="background-image: url('../src/image/kv.png');">
+        <div class="oveflow">Kreavita</div>
+        
+      </div>
+    <div class="card-projects" style="background-image: url('../src/image/Captura\ de\ ecrã\ 2025-10-02\ 132256.png');"> 
+      <div class="oveflow">Smarts.vendas</div>
     </div>
   
+        
+    </div>
+
+
+
+    <div class="flex-projects">
+
+     <div class="card-projects" style="background-image: url('../src/image/Captura\ de\ ecrã\ 2025-10-02\ 132256.png');"> 
+      <div class="oveflow">Smarts.vendas</div>
+      </div>
+    
+    
+      <div class="card-projects" style="background-image: url('../src/image/kv.png');">
+        <div class="oveflow">Kreavita</div>
+  </div>
+  
+</section>
+<footer id="contact">
+
+  <div class="waves" aria-hidden="true">
+
+    <div class="wave w1"></div>
+      <div class="wave w2"></div>
+      <div class="wave w3"></div>
+
   </div>
 
-  <div class="project-card">
-    <div class="project-image">
-      <img src="/src/image/kv.png" alt="Kreavita">
-    </div>
-    <div class="project-info">
-      <h1 class="title-project">Kreavita</h1>
-      <p>
-        Um site empresarial com projetos da Kreavita, empresa
-        especializada em design de interiores e renderização 3D.
-      </p>
-      <a href="#" class="btn-project">Visitar</a>
-    </div>
-  </div>
+   <div class="footer-content">
+      <div class="social-icon">
+        <a href="mailto:matiasarmando925@gmail.com"><i class="bi bi-inbox"></i></a>
+        <a href="https://github.com/Matias-Armando" target="_blank">  <i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/matias-armando" target="_blank"> <i class="bi bi-linkedin"></i></a>
+      </div>
 
-</div>
-
-     </div>
-      </section> 
- <!-- fim projects -->
-      <!-- footer site -->
-   <footer class="container-footer" id="contact">
-  <div class="interface">
-     <h1 class="title-contacts title">Contacts</h1>
-    <div class="content-footer">
+      <div class="menu">
+        <a href="#">home</a>
+        <a href="#">portfólio</a>
+        <a href="#">contactos</a>
+      </div>
       
-      <div class="container-rede-social">
-       
-        <div class="redes-social">
-          <p class="telefone">+(244) 930001585 / 955249905</p>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/matias-armando" target="_blank">
-                <i class="bi bi-linkedin"></i>
-                <span>LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Matias-Armando" target="_blank">
-                <i class="bi bi-github"></i>
-                <span>GitHub</span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:matiasarmando925@gmail.com">
-                <i class="bi bi-inbox"></i>
-                <span>E-mail</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="img-contacts">
-        <img src="" alt="Contact illustration" />
-      </div>
-    </div>
+  <p class="copy">&copy; Criado por Matias Armando</p>
   </div>
 </footer>
-
-        </main>
-    </div>
-    
-    <!-- fim conteudo -->
+  
 
     <!-- SCRIPT -->
     <script src="/src/script/javaScrip.js">
