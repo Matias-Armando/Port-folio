@@ -36,3 +36,13 @@ function SelectLink(){
 }
 MenuItem.forEach((item) =>
 item.addEventListener('click', SelectLink))
+
+ScrollReveal({
+  distance:'60px',
+  duration: 2500,
+  delay:400
+});
+
+ScrollReveal().reveal('.about-img, .skill-content ',{delay:500, origin:'top'});
+ScrollReveal().reveal('.about-text',{delay:500, origin:'bottom'});
+ScrollReveal().reveal('.content-projects',{delay:500, origin:'left'});
