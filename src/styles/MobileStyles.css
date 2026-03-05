@@ -43,6 +43,7 @@
 .home-img .img-box{
   width: 40vw;
   height:40vw;
+  margin-bottom: 2rem;
 }
 
 .skill{
@@ -77,8 +78,21 @@ flex-direction: column;
       height: 150vh;
   
 }
-}
 
+.title{
+ 
+  top: 30px;
+   left: -30px;
+   
+      
+}
+.title::after{
+ 
+  height: 0;
+  width: 0;
+
+}
+}
 
 
 
