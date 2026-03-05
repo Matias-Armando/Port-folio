@@ -56,22 +56,14 @@
 }
 
 .content-projects .card-projects{
-  
-  
-  width: 350px;
+
+  width: 250px;
   height: 160px;
-
-  
-
 }
-
-
-
 
 .content-projects{
 flex-direction: column;
-align-items: center;
-justify-content: center;
+
   
 }
 .skill-content .card img {
